@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <title>测试网页</title>
+  <style type="text/css">
+	a:link {color:#FF0000;text-decoration:none;}    /* 未被访问的链接 */
+	a:visited {color:#00FF00;text-decoration:none;} /* 已被访问的链接 */
+	a:hover {color:#FF00FF;text-decoration:none;}   /* 鼠标指针移动到链接上 */
+	a:active {color:#0000FF;text-decoration:none;}  /* 正在被点击的链接 */
+  body{
+		background-image:url(BG.jpg);
+		background-repeat:no-repeat;
+		background-attachment:fixed;}
+  p.menu{
+	font-size:35px;
+	font-weight:100;
+	color:red;
+	}
+  p.doc{
+	font-size:20px;
+  }
+  p.ttl{                      /* 标题 */
+		text-align:center;
+		color:blue;
+		font-family:arial;
+		font-size:40px;
+		font-weight:900;
+		font-style:oblique;
+		text-shadow: 5px 5px 5px #FF0000;
+	}
+	</style>
+ </head>
+ <body>
+	<p class="ttl">我的文档</p>
+	<p class="menu">文档目录</p>
+	    <a href="http://www.njtu.edu.cn/" target="view_frame"><p class="doc"><li>我的学校</li></p></a>
+		<a href="https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC/128981?fromtitle=%E5%8C%97%E4%BA%AC%E5%B8%82&fromid=126069&fr=aladdin" target="view_frame"><p class=doc><li>我的城市</li></p></a>
+		<a href="http://music.163.com/playlist?id=457183679&userid=327967246" target="view_frame"><p class=doc><li>我的音乐</li></p></a>
+		<p class=doc><li>我的小说</li></p>
+		<p class=doc><li>我的动漫</li></p>
+		<p class=doc><li>我的....</li></p>
+ </body>
+</html>
