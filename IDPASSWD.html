@@ -5,17 +5,17 @@
 			var isRight=true;
 			function addIDAndPwd(){
 				if(document.form1.ID.value.length>10 || document.form1.ID.value.length < 4){
-					isRight=false;
 					alert("ID长度应在4到10之间");
 					ID.focus();
 					ID.select();
+					isRight=false;
 				}
 				for(i=0;i<document.form1.ID.value.length;i++){
 					if((document.form1.ID.value[i]>='a' && document.form1.ID.value[i]<='z') || document.form1.ID.value[i]>='A' && document.form1.ID.value[i]<='Z')continue;
-					isRight=false;
 					alert("ID应只包含字母");
 					ID.focus();
 					ID.select();
+					isRight=false;
 					break;		
 				}
 				if(document.form1.Pwd.value.length<5){
@@ -28,7 +28,7 @@
 				for(j=0;j<document.form1.Pwd.value.length;j++){
 					if(x*y>0) break;
 					if(document.form1.Pwd.value[j]>='0' && document.form1.Pwd.value[j]<='9')x++;
-					if((document.form1.Pwd.value[i]>='a' && document.form1.Pwd.value[i]<='z') || document.form1.Pwd.value[i]>='A' && document.form1.Pwd.value[i]<='Z')y++;
+					if((document.form1.Pwd.value[j]>='a' && document.form1.Pwd.value[j]<='z') || document.form1.Pwd.value[j]>='A' && document.form1.Pwd.value[j]<='Z')y++;
 				}
 				if(x*y==0){
 					isRight=false;
@@ -45,8 +45,8 @@
 	</head>
 	<body>
 	<form name="form1">
-		<font size=3>ID  :    </font><input type="text"  name="ID"><font size=1>(4~10个字母)</font><br>
-		<font size=3>Password:</font><input type="password"  name="Pwd"><font size=1>(5个以上包含数字和字母)</font><br>
+		ID  :    <input type="text" name="ID"><br>
+		Password:<input type="password" name="Pwd"><br>
 		<input type="button" value="click" onclick=addIDAndPwd()>
 	</form>
 	</body>
